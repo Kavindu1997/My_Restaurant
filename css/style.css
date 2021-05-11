@@ -1,19 +1,19 @@
 body{
     font-size: 16px;
     color: #fff;
-    background-color:#000;
+    background-color:lavenderblush;
     font-family: 'Oxygen', sans-serif;
 }
 
 /** HEADER **/
 #header-nav{
-    background-color:greenyellow;
+    background-color:black;
     border-radius: 0;
     border: 0;
 }
 
 #logo-img{
-    background: url('../images/chef_logo.jpg') no-repeat;
+    background: url('../images/restaurant-logo_large.png') no-repeat;
     background-position: center;
     width: 150px;
     height: 150px;
@@ -26,7 +26,7 @@ body{
 
 .navbar-brand h1{
     font-family: 'Lora', serif;
-    color: #42652e;
+    color:gold;
     font-size: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
@@ -41,7 +41,7 @@ body{
 }
 
 .navbar-brand p{
-    color:#000;
+    color:goldenrod;
     text-transform: uppercase;
     font-size:.7em;
     margin-top: 15px;
@@ -79,13 +79,14 @@ body{
 }
 
 #phone div{
-    color: #557c3e;
+    color:gold;
+    font-weight: bold;
     text-align: right;
     padding-right: 15px;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-    border: 1px solid #272425;
+    border: 1px solid goldenrod;
 }
 
 .navbar-header button.navbar-toggle{
@@ -95,7 +96,7 @@ body{
 
 /* END HEADER */
 
-
+/* HOME PAGE */
 .container .jumbotron {
     box-shadow: 0 0 50px lightslategray;
     border: 2px solid #3F0C1F;
@@ -111,7 +112,7 @@ body{
 }
 
 #menu-tile:hover,#specials-tile:hover,#map-tile:hover{
-    box-shadow: 0 1px 5px 1px #cccccc ;
+    box-shadow: 0 1px 5px 1px gray ;
 }
 
 #menu-tile{
@@ -136,7 +137,48 @@ body{
     color: #fff;
     opacity: .8;
   }
+  /* END HOME PAGE */
   
+/* FOOTER */
+.panel-footer{
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    color:gold;
+    background-color:black;
+    border-top: 0;
+}
+
+.panel-footer div.row{
+    margin-bottom: 35px;
+}
+
+#hours,#address{
+    line-height: 2;
+}
+
+#hours > span,#address >span{
+    font-size: 1.3em;
+    color:maroon;
+}
+
+#address p{
+    color:whitesmoke;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 1.8;
+}
+
+#testimonials{
+    font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+  margin-top: 30px;
+}
+
+
+/* END FOOTER */
 
 
 /********** Large devices only **********/
@@ -208,6 +250,19 @@ body{
     #menu-tile,#specials-tile{
         width: 360px;
         margin: 0 auto 15px;
+    }
+
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .panel-footer section:nth-child(3) {
+        margin-bottom: 0; /* margin already exists on the whole row */
+    }
+
+    .panel-footer section hr {
+        width: 50%;
     }
 
    
